@@ -1,0 +1,406 @@
+/* ================= GLOBAL STYLES ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f1;
+    color: #2e4a36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+input, button {
+    font-size: 1rem;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* ================= LOGIN PAGE ================= */
+#login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.login-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(46, 74, 54, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border-top: 5px solid #006633; /* Veritas Premium Green Border */
+}
+
+.logo-area img {
+    height: 80px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.login-box h2 {
+    margin-bottom: 24px;
+    color: #006633;
+    font-weight: 700;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #c3cbd6;
+    transition: border 0.3s;
+}
+
+.login-box input:focus {
+    border-color: #006633;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #006633;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.login-box button:hover {
+    background-color: #004d26;
+}
+
+.login-box .secondary-btn {
+    background-color: transparent;
+    color: #006633;
+    border: 2px solid #006633;
+}
+
+.login-box .secondary-btn:hover {
+    background-color: #f0f4f1;
+}
+
+.error-msg {
+    color: #d93025;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* ================= GENERATOR PAGE ================= */
+#generator-page {
+    width: 100%;
+    max-width: 1050px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.header {
+    background-color: #006633;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #ffffff;
+}
+
+.header-title-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-logo {
+    height: 45px;
+    object-fit: contain;
+    background: white;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.header h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+.logout-btn {
+    background-color: transparent;
+    color: white;
+    border: 1.5px solid white;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: white;
+    color: #006633;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 40px;
+}
+
+/* Left Side Control Blocks */
+.form-section {
+    flex: 1.2;
+    min-width: 320px;
+}
+
+.form-section h3, .action-section h3 {
+    margin-bottom: 18px;
+    color: #006633;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #e1ebe4;
+    padding-bottom: 6px;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #4a5d50;
+    font-size: 0.9rem;
+}
+
+.form-section input[type="text"] {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 20px;
+    border: 1px solid #cddbd0;
+    background-color: #fafdfb;
+}
+
+.form-section input[type="text"]:focus {
+    border-color: #006633;
+}
+
+.form-section input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #f4f8f5;
+    border: 1px dashed #a3bfae;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+/* Action Controls Panel */
+.action-section {
+    margin-top: 15px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.action-btn {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    transition: transform 0.1s, opacity 0.2s;
+}
+
+.action-btn:active {
+    transform: scale(0.99);
+}
+
+
+.download-btn { background-color: #006633; }
+.download-btn:hover { background-color: #192023; }
+
+.print-btn { background-color: #8fae98; color: #153a21; font-weight: 700; border: 1px solid #6c9176;}
+.print-btn:hover { background-color: #799d83; }
+
+/* Right Side Window Preview */
+.preview-section {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f8f5;
+    border-radius: 8px;
+    padding: 30px 20px;
+    border: 1px dashed #cddbd0;
+}
+
+.preview-section h3 {
+    margin-bottom: 20px;
+    color: #4a5d50;
+}
+
+/* ================= VERITAS ID CARD PREVIEW ================= */
+.id-card {
+    width: 325px;
+    height: 460px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 12px 35px rgba(46, 74, 54, 0.18);
+    overflow: hidden;
+    text-align: center;
+    border: 3px solid #006633;
+    position: relative;
+}
+
+/* Subtle Watermark/Pattern Overlay on Card Background */
+.id-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    opacity: 0.03;
+    background-image: radial-gradient(#006633 2px, transparent 2px);
+    background-size: 15px 15px;
+    pointer-events: none;
+}
+
+.card-header {
+    background: #006633;
+    color: white;
+    padding: 16px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-bottom: 3px solid #ffffff;
+}
+
+.card-logo {
+    height: 42px;
+    width: 42px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.card-header-text {
+    text-align: left;
+}
+
+.card-header h4 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.card-header h5 {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.card-body {
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.card-body img {
+    width: 125px;
+    height: 125px;
+    border-radius: 8px; /* Classic structured block photo look */
+    object-fit: cover;
+    border: 3px solid #006633;
+    margin-bottom: 18px;
+    background-color: #eef3ef;
+}
+
+.card-body h2 {
+    font-size: 1.35rem;
+    color: #0b2414;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.card-body .course {
+    font-size: 0.95rem;
+    color: #556b5c;
+    margin-bottom: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.card-body .matric {
+    font-size: 0.95rem;
+    color: #556b5c;
+    margin-bottom: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.card-body .level{
+    font-size: 0.95rem;
+    color: #556b5c;
+    margin-bottom: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.id-number {
+    background-color: #e6f2eb;
+    color: #006633;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    width: 100%;
+    border: 1px solid #b8dbca;
+}
+
+.id-number strong {
+    font-weight: 700;
+}
+
+/* ================= BOTTOM FOOTER SYSTEM ================= */
+.page-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7faf8;
+    border-top: 1px solid #e1ebe4;
+    font-size: 0.95rem;
+}
+
+.page-footer a {
+    color: #006633;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px dashed #006633;
+}
+
+.page-footer a:hover {
+
+    color: #004d26;
+    border-bottom-style: solid;
+}
