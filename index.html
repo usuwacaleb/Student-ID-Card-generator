@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student ID Generator</title>
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Firebase Libraries (Using compat version for simpler code) -->
+
     <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
 </head>
 <body>
 
-    <!-- ================= LOGIN PAGE ================= -->
   <div id="login-page">
         <div class="login-box">
             <div class="logo-area">
-                <!-- Replace with your actual logo image path -->
                 <img src="card-bg.png" alt="Veritas Logo" onerror="this.src='https://placeholder.com'">
             </div>
             <h2>Admin Login</h2>
@@ -28,7 +25,6 @@
         </div>
     </div>
 
-    <!-- ================= GENERATOR PAGE ================= -->
     <div id="generator-page" style="display: none;">
         <div class="header">
             <h2>Student ID Generator</h2>
@@ -63,7 +59,6 @@
                 </div>
             </div>
 
-            <!-- Right Side: Real-time Preview -->
             <div class="preview-section">
                 <h3>Live Preview</h3>
                 <div class="id-card" id="id-card">
@@ -71,7 +66,6 @@
                         <h4>VERITAS UNIVERSITY</h4>
                     </div>
                     <div class="card-body">
-                        <!-- Default placeholder image -->
                         <img id="cardPhoto" src="https://via.placeholder.com/100" alt="Student Photo">
                         
                         <h2 id="cardName">Student Name</h2>
