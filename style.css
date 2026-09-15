@@ -1,4 +1,4 @@
-/* ================= GLOBAL STYLES ================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +21,6 @@ input, button {
     outline: none;
 }
 
-/* ================= LOGIN PAGE ================= */
 #login-page {
     display: flex;
     justify-content: center;
@@ -38,7 +37,7 @@ input, button {
     width: 100%;
     max-width: 400px;
     text-align: center;
-    border-top: 5px solid #006633; /* Veritas Premium Green Border */
+    border-top: 5px solid #006633; 
 }
 
 .logo-area img {
@@ -97,7 +96,6 @@ input, button {
     font-size: 0.9rem;
 }
 
-/* ================= GENERATOR PAGE ================= */
 #generator-page {
     width: 100%;
     max-width: 1050px;
@@ -160,7 +158,6 @@ input, button {
     gap: 40px;
 }
 
-/* Left Side Control Blocks */
 .form-section {
     flex: 1.2;
     min-width: 320px;
@@ -237,7 +234,6 @@ input, button {
 .print-btn { background-color: #8fae98; color: #153a21; font-weight: 700; border: 1px solid #6c9176;}
 .print-btn:hover { background-color: #799d83; }
 
-/* Right Side Window Preview */
 .preview-section {
     flex: 1;
     min-width: 320px;
@@ -256,7 +252,6 @@ input, button {
     color: #4a5d50;
 }
 
-/* ================= VERITAS ID CARD PREVIEW ================= */
 .id-card {
     width: 325px;
     height: 460px;
@@ -269,7 +264,6 @@ input, button {
     position: relative;
 }
 
-/* Subtle Watermark/Pattern Overlay on Card Background */
 .id-card::before {
     content: "";
     position: absolute;
@@ -330,7 +324,7 @@ input, button {
 .card-body img {
     width: 125px;
     height: 125px;
-    border-radius: 8px; /* Classic structured block photo look */
+    border-radius: 8px;
     object-fit: cover;
     border: 3px solid #006633;
     margin-bottom: 18px;
@@ -383,7 +377,6 @@ input, button {
     font-weight: 700;
 }
 
-/* ================= BOTTOM FOOTER SYSTEM ================= */
 .page-footer {
     text-align: center;
     padding: 20px;
